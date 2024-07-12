@@ -1,10 +1,10 @@
-Version ID: 1.0.13
+Version ID: 1.0.0
 
-# Overworld Radio
+# Burt Hurtz
 
 ## Upcoming Dates
-- Ongoing Hints, currently on #2
-- December 21st, major updates begin
+- Presale active daily, ¡NOW!
+- Soft Launch July 31st
   
-- February 8th, major update #8
-- and the shift to internal development 
+- Jan 21st 2025 = New flavor(s) drop(s)
+- and big surprise, contact for spoilage
