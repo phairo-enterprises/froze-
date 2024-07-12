@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #fff8e1;
+            color: #5d4037;
             font-family: 'Helvetica Neue', sans-serif;
             display: flex;
             flex-direction: column;
@@ -36,18 +36,19 @@
         }
 
         #contentArea {
-            border: 2px solid #888888;
+            border: 2px solid #8d6e63;
             padding: 20px;
             overflow-y: auto;
             width: 60vw;
-            background-color: #222222;
+            background-color: #fff3e0;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: #5d4037;
+            animation: fadeIn 2s ease-in-out;
         }
 
         h1, h2, h3, h4 {
-            color: #FFD700;
+            color: #d32f2f;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
@@ -58,60 +59,85 @@
         }
 
         hr {
-            border: 1px solid #FFD700;
+            border: 1px solid #d32f2f;
             margin: 20px 0;
         }
 
         strong {
-            color: #FF4500;
+            color: #e64a19;
         }
 
         em {
-            color: #ADFF2F;
+            color: #388e3c;
         }
 
         .order-now {
             margin-top: 20px;
             font-size: 1.5em;
             font-weight: bold;
-            color: #FFD700;
+            color: #d32f2f;
             text-align: center;
         }
 
         .order-now a {
-            color: #FFD700;
+            color: #d32f2f;
             text-decoration: none;
             padding: 10px 20px;
-            border: 2px solid #FFD700;
+            border: 2px solid #d32f2f;
             border-radius: 5px;
+            animation: glow 2s infinite alternate;
         }
 
         .available-now {
             font-size: 1.5em;
             font-weight: bold;
-            color: #FFD700;
+            color: #d32f2f;
             text-align: center;
-            animation: glow 1s infinite;
+            animation: glow 1s infinite alternate;
         }
 
         @keyframes glow {
-            0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700; }
-            100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; }
+            from { text-shadow: 0 0 5px #d32f2f, 0 0 10px #d32f2f; }
+            to { text-shadow: 0 0 15px #d32f2f, 0 0 30px #d32f2f; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .coming-soon {
-            color: #888888;
+            color: #8d6e63;
         }
 
         .heat-levels {
-            color: #FF4500;
+            color: #e64a19;
         }
 
         .footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em;
-            color: #9ACD32;
+            color: #388e3c;
+        }
+
+        .go-to-sleep {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            animation: buttonFadeIn 1s ease-in-out;
+        }
+
+        @keyframes buttonFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -157,15 +183,20 @@
         </div>
     </div>
 
+    <button id="goToSleepButton" class="go-to-sleep" onclick="window.location.href='index.html'">Go to Sleep</button>
+
     <script>
         window.onscroll = function() {
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
             var imageContainer = document.getElementById('imageContainer');
+            var goToSleepButton = document.getElementById('goToSleepButton');
 
             if (scrollPosition > 0) {
                 imageContainer.classList.add('hidden');
+                goToSleepButton.style.display = 'block';
             } else {
                 imageContainer.classList.remove('hidden');
+                goToSleepButton.style.display = 'none';
             }
         };
     </script>
