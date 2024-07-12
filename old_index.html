@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generous Dachshund's</title>
+    <title>Burt Hurtz Sherbet and Frozen Cream Creations by Generous Dachshund's</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* Dark mode magic with a mystical twist */
         body {
             background-color: #121212;
             color: #ffffff;
@@ -15,34 +14,31 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
         }
 
-        /* Image container */
+        .hidden {
+            display: none;
+        }
+
         .image-container {
             text-align: center;
             margin-bottom: 20px;
-            max-width: 80vw; /* Adjusts width to viewport */
-            background-color: lightblue; /* Initial background color */
-            transition: background-color 0.3s; /* Smooth transition for color change */
-            overflow: hidden; /* Hide the overflow content */
-            height: 500px; /* Initial height of the image container */
+            max-width: 80vw;
+            overflow: hidden;
+            height: 500px;
         }
 
-        /* Responsive image styling */
         .image-container img {
-            max-width: 100%; /* Ensures image is not larger than container */
-            height: 500px; /* Fixed height for image */
-            border-radius: 10px; /* Optional: Adds rounded corners to the image */
+            max-width: 100%;
+            height: 500px;
+            border-radius: 10px;
         }
 
-        /* Content area as a portal to the magical world */
         #contentArea {
             border: 2px solid #888888;
             padding: 20px;
             overflow-y: auto;
-            max-height: 60vh;
             width: 60vw;
             background-color: #222222;
             border-radius: 15px;
@@ -50,40 +46,72 @@
             color: #ffffff;
         }
 
-        /* Styling for the mystical headings */
         h1, h2, h3, h4 {
-            color: #FFD700; /* Golden text for headings */
+            color: #FFD700;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
 
-        /* Enhancing the paragraphs with a touch of elegance */
         p {
             font-size: 1.1em;
             line-height: 1.6;
         }
 
-        /* Adding a touch of enigma to horizontal rule */
         hr {
             border: 1px solid #FFD700;
             margin: 20px 0;
         }
 
-        /* Style for strong elements to make them stand out */
         strong {
-            color: #FF4500; /* Vivid orange for bold text */
+            color: #FF4500;
         }
 
-        /* Italic texts are subtly highlighted */
         em {
-            color: #ADFF2F; /* Green text for emphasis */
+            color: #ADFF2F;
         }
 
-        /* Contact info styling */
-        .contact-info {
+        .order-now {
             margin-top: 20px;
-            font-style: italic;
-            color: #9ACD32; /* Yellow-green for contact info */
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFD700;
+            text-align: center;
+        }
+
+        .order-now a {
+            color: #FFD700;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+        }
+
+        .available-now {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFD700;
+            text-align: center;
+            animation: glow 1s infinite;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700; }
+            100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; }
+        }
+
+        .coming-soon {
+            color: #888888;
+        }
+
+        .heat-levels {
+            color: #FF4500;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #9ACD32;
         }
     </style>
 </head>
@@ -94,51 +122,51 @@
     </div>
 
     <div id="contentArea">
-        <h1>Setting the Stage: Overworld Radio?</h1>
-       <p>Ladies and gentlemen, men and women of the world,</p>
+        <h1>Burt Hurtz Sherbet</h1>
+        <h2>Frozen Cream Creations by Generous Dachshund's</h2>
 
-<p>Today, we stand at a pivotal moment in history, on the brink of a transformation <em>decades</em> in the making. The groundwork is laid, the plans are drawn, and a new era is within our reach: an era where you are not merely participants, but the <strong>architects</strong> of your destiny.</p>
-
-<p>For too long, we've been entangled in a system that veiled its intentions, treating us not as living beings but mere extensions of its vast commercial empire. But no more. I stand before you, not just with a promise, but with a plan born from the principles of the <strong>U.S. Constitution</strong>, fused with the <em>hard work</em> of reimagining our future.</p>
-
-<p>The path has been arduous, and the most challenging part is behind us. The complex systems that once bound us are beginning to unravel. The entities that saw us as subjects are poised for transformation. We are on the cusp of a new reality, but the journey is not yet complete.</p>
-
-<p>Now, we seek the best and most dedicated engineers and artists to join us. Your skills, passion, and creativity are essential in solidifying the work that is ready for production. Together, we will shape this new era, turning vision into reality.</p>
-
-<p>This call is not just for participation, but for commitment to a cause greater than ourselves, a cause where each one of us can contribute to a future where we all stand as <strong>free men and women</strong>, paramount in our own lives.</p>
-
-<p>Welcome to the future... Come back home to Overworld Radio</p>
-        
-        <hr>
-        <div class="contact-info">
-            <p>For contact inquiries, we only operate via private messaging systems of the highest standards. For now, we use the official Matrix server for Element. Soon, we will operate our own private server to maintain even higher standards.</p>
-            <p>Matrix.org: <a href="https://matrix.to/#/@fightcorruption:matrix.org">https://matrix.to/#/@fightcorruption:matrix.org</a></p>
+        <div class="order-now">
+            <a href="https://matrix.to/#/@fightcorruption:matrix.org">Order Now</a>
         </div>
-        <h2>HINTS... Check back for all 888</h2>
-        <p>NOT FOR PROFIT, NOT COMMERCIAL
-        </p>
 
+        <div class="available-now">Available Now</div>
+        <p><strong>Strongberry Shortshake:</strong> Fresh and fruity delight made with real strawberries. All organic ingredients, bartender style flashy preparation, using Bellwether Farms A2 milk and A2 yogurt. </p>
+
+        <h3 class="coming-soon">Coming Soon</h3>
+        <h2 class="coming-soon">Menu</h2>
+
+        <h3 class="heat-levels">Spicy Levels</h3>
+        <ul class="heat-levels">
+            <li>Buddy (no heat)</li>
+            <li>Jack (mild)</li>
+            <li>Milo (medium)</li>
+            <li>Twister (hot)</li>
+            <li>Otto (deadly hot)</li>
+            <li>Secret flavor Pepe (strangely hot)</li>
+        </ul>
+
+        <h3 class="coming-soon">Gourmet Dishes</h3>
+        <p class="coming-soon"><strong>Pecan Fried Rice Wraps (Burrito):</strong> Savory pecan fried rice wrapped in a tortilla, gourmet and fresh.</p>
+        <p class="coming-soon"><strong>Regular or Sweet Potato Fries:</strong> Crispy fries, your choice of regular or sweet potato.</p>
+        <p class="coming-soon"><strong>Hashbrowns:</strong> Perfectly golden and crispy, with a gourmet twist.</p>
+        <p class="coming-soon"><strong>Garlic Soup:</strong> Rich and creamy soup with the perfect amount of garlic.</p>
+        <p class="coming-soon"><strong>Seaweed Sandwich:</strong> A unique and delicious sandwich with fresh seaweed.</p>
+
+        <div class="footer">
+            <p>All rights reserved, PRIVATE PROPERTY, NOT FOR PROFIT, NOT COMMERCIAL, ONE BIG FAMILY, PRESENTED AS IS WITHOUT WARRANTY. NOT A BUSINESS, ONE BIG FAMILY STRIVING TO RESURRECT THE TRIBUTE SYSTEM OF OUR BRILLIANT ANCESTORS.</p>
+        </div>
     </div>
 
     <script>
-        // Function to generate a random color
-        function getRandomColor() {
-            var colors = ['#FFADAD', '#FFD6A5', '#FDFFB6', '#CAFFBF', '#9BF6FF', '#A0C4FF', '#BDB2FF', '#FFC6FF']; // Array of colors
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
-
-        // Change background color and crop image on scroll
         window.onscroll = function() {
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
             var imageContainer = document.getElementById('imageContainer');
-            var img = imageContainer.querySelector('img');
 
-            // Change background color of the image container
-            imageContainer.style.backgroundColor = getRandomColor();
-
-            // Adjust the height of the image as you scroll
-            var newHeight = Math.max(300, 500 - scrollPosition * 0.5); // Min height: 300px, Max height starts at 500px
-            img.style.height = newHeight + 'px';
+            if (scrollPosition > 0) {
+                imageContainer.classList.add('hidden');
+            } else {
+                imageContainer.classList.remove('hidden');
+            }
         };
     </script>
 </body>
