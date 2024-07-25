@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zenith International Contracts Unlimited</title>
+  <title>Welcome to Burt Hurtz</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
     body {
@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      transition: background-color 2s ease-in-out;
       overflow: hidden;
     }
 
@@ -27,9 +26,6 @@
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
       max-width: 500px;
-      opacity: 1;
-      transition: opacity 2s ease-in, transform 0.5s ease-out;
-      position: relative;
     }
 
     h1 {
@@ -58,15 +54,6 @@
     button:hover {
       background-color: #444;
       transform: scale(1.05);
-    }
-
-    input[type="text"],
-    input[type="email"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #888;
-      margin-bottom: 20px;
-      width: 80%;
     }
 
     .available-now {
@@ -99,6 +86,7 @@
       height: 100%;
       overflow: hidden;
       pointer-events: none;
+      z-index: -1;
     }
 
     .firework {
@@ -122,12 +110,6 @@
       transform: scale(1.1);
     }
 
-    #sleepingDog {
-      display: none;
-      font-size: 2em;
-      color: #9ACD32;
-    }
-
     @keyframes iridescentGlow {
       0% { color: #FF00FF; text-shadow: 0 0 20px #FF00FF, 0 0 30px #FF00FF, 0 0 40px #FF00FF; }
       25% { color: #00FFFF; text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF; }
@@ -140,7 +122,7 @@
       animation: iridescentGlow 3s infinite;
     }
 
-    .dashhound-background {
+    .dachshund-background {
       position: absolute;
       top: 0;
       left: 0;
@@ -153,7 +135,7 @@
       opacity: 0.2;
     }
 
-    .dashhound-background span {
+    .dachshund-background span {
       font-size: 10em;
       margin: 0;
       padding: 0;
@@ -162,7 +144,7 @@
 </head>
 
 <body>
-  <div class="dashhound-background">
+  <div class="dachshund-background">
     <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
     <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
     <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
@@ -170,41 +152,24 @@
   </div>
 
   <div id="mainContent">
-    <h1>Zenith International Contracts Unlimited</h1>
-    <p class="subtitle">Professional Services and Solutions</p>
-    <p class="available-now">Enter Your Email:</p>
-    <input type="email" id="email" placeholder="you@example.com">
-    <br>
-    <button onclick="submitEmail()">Submit</button>
-    <button onclick="window.location.href='old_index.html'">Order Now or View MENU</button>
+    <h1>Burt Hurtz</h1>
+    <p class="subtitle">Sherbet and Frozen Cream Creations</p>
+    <button onclick="window.location.href='zicu.html'">Zenith International Contracts Unlimited</button>
+    <button onclick="window.location.href='old_index.html'">Generous Dashhound's</button>
+    <button onclick="window.location.href='https://forms.gle/g8dVMQ1zhPsMgXVN8'">Bonus Rewards</button>
     <div class="fireworks-container" id="fireworksContainer"></div>
   </div>
 
   <button id="resetButton" onclick="resetPage()">Wake Up</button>
-  <div id="sleepingDog">(-.-)Zzz...</div>
 
   <script>
-    function submitEmail() {
-      const email = document.getElementById('email').value;
-      if (email) {
-        alert(`Email submitted: ${email}`);
-        // Logic to send email to server can be added here
-      } else {
-        alert('Please enter a valid email.');
-      }
-    }
-
     window.onload = function() {
       setTimeout(function() {
         wakeUpAnimation();
-      }, 5000);
+      }, 100000);
     };
 
     function wakeUpAnimation() {
-      var mainContent = document.getElementById('mainContent');
-      mainContent.classList.add('animate');
-      document.body.style.backgroundColor = '#333333';
-      
       var fireworksContainer = document.getElementById('fireworksContainer');
       for (var i = 0; i < 50; i++) {
         var firework = document.createElement('div');
@@ -216,15 +181,8 @@
       }
 
       setTimeout(function() {
-        mainContent.classList.add('iridescent');
         document.body.classList.add('iridescent');
       }, 30000);
-
-      setTimeout(function() {
-        mainContent.style.display = 'none';
-        document.getElementById('resetButton').style.display = 'block';
-        document.getElementById('sleepingDog').style.display = 'block';
-      }, 75000);
     }
 
     function resetPage() {
