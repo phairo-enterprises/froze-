@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What even is Ice Cream Anyways?</title>
+  <title>Zenith International Contracts Unlimited</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
     body {
@@ -60,7 +60,8 @@
       transform: scale(1.05);
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="email"] {
       padding: 10px;
       border-radius: 5px;
       border: 1px solid #888;
@@ -139,7 +140,7 @@
       animation: iridescentGlow 3s infinite;
     }
 
-    .dachshund-background {
+    .dashhound-background {
       position: absolute;
       top: 0;
       left: 0;
@@ -152,7 +153,7 @@
       opacity: 0.2;
     }
 
-    .dachshund-background span {
+    .dashhound-background span {
       font-size: 10em;
       margin: 0;
       padding: 0;
@@ -161,20 +162,20 @@
 </head>
 
 <body>
-  <div class="dachshund-background">
-    <span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span>
-    <span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span>
-    <span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span>
-    <span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span><span>🐕</span>
+  <div class="dashhound-background">
+    <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
+    <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
+    <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
+    <span>😋</span><span>😋</span><span>😋</span><span>😋</span><span>😋</span>
   </div>
 
   <div id="mainContent">
-    <h1>Generous Dashhound's Presents</h1>
-    <p class="subtitle">Sherbet and Frozen Cream Creations</p>
-    <p class="available-now">NO BOTS ALLOWED:</p>
-    <input type="text" id="api-key">
+    <h1>Zenith International Contracts Unlimited</h1>
+    <p class="subtitle">Professional Services and Solutions</p>
+    <p class="available-now">Enter Your Email:</p>
+    <input type="email" id="email" placeholder="you@example.com">
     <br>
-    <button onclick="activateAPI()">ENTER CAPTCHA(disabled)</button>
+    <button onclick="submitEmail()">Submit</button>
     <button onclick="window.location.href='old_index.html'">Order Now or View MENU</button>
     <div class="fireworks-container" id="fireworksContainer"></div>
   </div>
@@ -183,8 +184,14 @@
   <div id="sleepingDog">(-.-)Zzz...</div>
 
   <script>
-    function activateAPI() {
-      alert('Captcha Activated!');
+    function submitEmail() {
+      const email = document.getElementById('email').value;
+      if (email) {
+        alert(`Email submitted: ${email}`);
+        // Logic to send email to server can be added here
+      } else {
+        alert('Please enter a valid email.');
+      }
     }
 
     window.onload = function() {
